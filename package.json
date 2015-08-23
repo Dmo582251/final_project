@@ -1,0 +1,30 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "Final Project App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dmo582251/final_project.git"
+  },
+  "author": "Dominique Mortelliti & Mike Preis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmo582251/final_project/issues"
+  },
+  "homepage": "https://github.com/Dmo582251/final_project",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "fs": "0.0.2",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "path": "^0.11.14",
+    "pg": "^4.4.1"
+  }
+}
