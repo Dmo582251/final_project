@@ -2,22 +2,22 @@ var db = require('../db.js');
 
 /*FOOTBALL TERMS AND DEFINITIONS:
 -----------------------------------------*/
-var footballTerm = ['First Down', 'Touchdown', 'Interception', 'Move the Chains', 'Safety', 'Onside Kick', 'Audible', 'Shotgun Formation', 'Blitz', 'Sack', 'Fumble', 'Line Of Scrimmage', 'Hail Mary' 'Hash Marks', 'Backfield'];
+var footballTerm = ['First Down', 'Touchdown', 'Interception', 'Move the Chains', 'Safety', 'Onside Kick', 'Audible', 'Shotgun Formation', 'Blitz', 'Sack', 'Fumble', 'Line Of Scrimmage', 'Hail Mary', 'Hash Marks', 'Backfield'];
 
 var footballDefinition = [
-  "After the offense advances at least 10 yards down the field they are awarded a first down",
-  "When an offensive player with the ball enters the endzone. This is worth 6 points",
-  "When a defender catches a pass intended for an offensive player",
-  "When a team gets a first down, the people holding the first down markers move up the field to indicate the new placement of the ball and to show how far a team needs to go in order to get a first down",
-  "When the defense stops the offense inside the offenses endzone. this is worth 2 points",
-  "When the team kicking off tries to regain possession by recovering the ball after it either rickochets off of a player or travels at least 10 yards",
-  "When a player changes the play at the line of scrimmage",
-  "Instead of accepting the ball at the line of scrimmage, the quarterback stands 5 to 7 yards away from the center when recieving the ball",
-  "When a defense sends additonal players to rush the quarterback",
-  "When a defender tackles the quarterback before he throws the ball",
-  "When a player loses control of the ball and drops it",
-  "Where a football play starts",
-  "A despiration play by the offense where all receivers run straight down the field and the quarterback thows the ball toward the end zone hoping that a reciever catches it",
+  'After the offense advances at least 10 yards down the field they are awarded a first down',
+  'When an offensive player with the ball enters the endzone. This is worth 6 points',
+  'When a defender catches a pass intended for an offensive player',
+  'When a team gets a first down, the people holding the first down markers move up the field to indicate the new placement of the ball and to show how far a team needs to go in order to get a first down',
+  'When the defense stops the offense inside the offenses endzone. this is worth 2 points',
+  'When the team kicking off tries to regain possession by recovering the ball after it either rickochets off of a player or travels at least 10 yards',
+  'When a player changes the play at the line of scrimmage',
+  'Instead of accepting the ball at the line of scrimmage, the quarterback stands 5 to 7 yards away from the center when recieving the ball',
+  'When a defense sends additonal players to rush the quarterback',
+  'When a defender tackles the quarterback before he throws the ball',
+  'When a player loses control of the ball and drops it',
+  'Where a football play starts',
+  'A despiration play by the offense where all receivers run straight down the field and the quarterback thows the ball toward the end zone hoping that a reciever catches it',
   'A hash mark on the field determines the spot of the ball. When a play ends to the left of the hash mark, the next play, the ball will be spotted on the left hash mark. vise versa for the right side. In short, hash marks are used by referees to spot the ball',
   'A backfield refers to the players behind the line of scrimmage. Such as the quarterback, the fullback, and the running back'
 ];
@@ -31,11 +31,19 @@ var firstDown = {
   sport: footballSport
 };
 
+db.create('terms', firstDown, function(term) {
+  console.log("football 1 has worked");
+});
+
 var touchDown = {
   term: footballTerm[1],
   definition: footballDefinition[1],
   sport: footballSport
 };
+
+db.create('terms', touchDown, function(term) {
+  console.log("football 2 has worked");
+});
 
 var interception = {
   term: footballTerm[2],
@@ -43,11 +51,19 @@ var interception = {
   sport: footballSport
 };
 
+db.create('terms', interception, function(term) {
+  console.log("football 3 has worked");
+});
+
 var moveChains = {
   term: footballTerm[3],
   definition: footballDefinition[3],
   sport: footballSport
 };
+
+db.create('terms', moveChains, function(term) {
+  console.log("football 4 has worked");
+});
 
 var safety = {
   term: footballTerm[4],
@@ -55,11 +71,19 @@ var safety = {
   sport: footballSport
 };
 
+db.create('terms', safety, function(term) {
+  console.log("football 5 has worked");
+});
+
 var onsideKick = {
 	term: footballTerm[5],
   definition: footballDefinition[5],
   sport: footballSport
 };
+
+db.create('terms', onsideKick, function(term) {
+  console.log("football 6 has worked");
+});
 
 var audible = {
 	term: footballTerm[6],
@@ -67,11 +91,19 @@ var audible = {
   sport: footballSport
 }
 
+db.create('terms', audible, function(term) {
+  console.log("football 7 has worked");
+});
+
 var shotgunF = {
 	term: footballTerm[7],
   definition: footballDefinition[7],
   sport: footballSport	
 };
+
+db.create('terms', shotgunF, function(term) {
+  console.log("football 8 has worked");
+});
 
 var blitz = {
 	term: footballTerm[8],
@@ -79,11 +111,19 @@ var blitz = {
   sport: footballSport	
 };
 
+db.create('terms', blitz, function(term) {
+  console.log("football 9 has worked");
+});
+
 var footballSack = {
 	term: footballTerm[9],
   definition: footballDefinition[9],
   sport: footballSport
 };
+
+db.create('terms', footballSack, function(term) {
+  console.log("football 10 has worked");
+});
 
 var fumble = {
 	term: footballTerm[10],
@@ -91,11 +131,19 @@ var fumble = {
   sport: footballSport
 };
 
+db.create('terms', fumble, function(term) {
+  console.log("football 11 has worked");
+});
+
 var lineOfScrim = {
 	term: footballTerm[11],
   definition: footballDefinition[11],
   sport: footballSport
 };
+
+db.create('terms', lineOfScrim, function(term) {
+  console.log("football 12 has worked");
+});
 
 var hailMary = {
 	term: footballTerm[12],
@@ -103,17 +151,29 @@ var hailMary = {
   sport: footballSport
 };
 
+db.create('terms', hailMary, function(term) {
+  console.log("football 13 has worked");
+});
+
 var hashMarks = {
 	term: footballTerm[13],
   definition: footballDefinition[13],
   sport: footballSport
 };
 
+db.create('terms', hashMarks, function(term) {
+  console.log("football 14 has worked");
+});
+
 var backField = {
 	term: footballTerm[14],
   definition: footballDefinition[14],
   sport: footballSport
 };
+
+db.create('terms', backField, function(term) {
+  console.log("football 15 has worked");
+});
 
 
 /*BASKETBALL TERMS AND DEFINITIONS:
@@ -123,21 +183,21 @@ var basketballTerm = ['Jump Shot', 'Pick and roll', '3 pointer', 'Foul', 'And 1'
 var basketballSport = "basketball"
 
 var basketballDefintion = [
-  "The standard",
-  "A common basetball play where an offensive player without the ball picks the defender who is gaurding the offensive player who has the ball. Then the offensive player who set the pick rotates to the basket and accepts a pass from the offesive player with the ball",
-  "A jump shot that is attempted behind the 3-point arc",
-  "Illegal contact between an offensive and defensive player",
-  "When a player is fouled during a scoring attempt and makes the basket anyway. The player who was fouled then gets an opportunity to shot 1 foul shot. So the player gets the points from the play AND 1 extra shot",
-  "A common move by an offensive player with the basketball to get around a defender",
-  "not good enough to be apart of the starting 5, but the first player to come off the bench during a game",
-  "A term used to refer to a teams starting guards (point-guard, shoting-guard)",
-  "A scoring attempt where the offensive player lays the ball up off of the backboard",
-  "A scoring attempt where an offensive player forcefully throws the basetball into the hoop",
-  "A tactic where a defensive player stands in front of an offensive player and accepts contact. If done correctly, a foul is called on the offensive player and the defending team gets possession",
-  "When a defensive player prevents the ball from going into the basket or when a player interferes with the ball while it's going into the basket",
-  "A defensive strategy where each defender is given an area of responsibility instead of a specific player to defend",
-  "A defensive strategy where each player is gaurding one specific player",
-  "A scoring attempt where a player tosses the ball up towards the hoop where another offensive player jumps up and slams it into the basket"
+  'The standard',
+  'A common basetball play where an offensive player without the ball picks the defender who is gaurding the offensive player who has the ball. Then the offensive player who set the pick rotates to the basket and accepts a pass from the offesive player with the ball',
+  'A jump shot that is attempted behind the 3-point arc',
+  'Illegal contact between an offensive and defensive player',
+  'When a player is fouled during a scoring attempt and makes the basket anyway. The player who was fouled then gets an opportunity to shot 1 foul shot. So the player gets the points from the play AND 1 extra shot',
+  'A common move by an offensive player with the basketball to get around a defender',
+  'not good enough to be apart of the starting 5, but the first player to come off the bench during a game',
+  'A term used to refer to a teams starting guards (point-guard, shoting-guard)',
+  'A scoring attempt where the offensive player lays the ball up off of the backboard',
+  'A scoring attempt where an offensive player forcefully throws the basetball into the hoop',
+  'A tactic where a defensive player stands in front of an offensive player and accepts contact. If done correctly, a foul is called on the offensive player and the defending team gets possession',
+  'When a defensive player prevents the ball from going into the basket or when a player interferes with the ball while its going into the basket',
+  'A defensive strategy where each defender is given an area of responsibility instead of a specific player to defend',
+  'A defensive strategy where each player is gaurding one specific player',
+  'A scoring attempt where a player tosses the ball up towards the hoop where another offensive player jumps up and slams it into the basket'
 ];
 
 //Basketball variables and database

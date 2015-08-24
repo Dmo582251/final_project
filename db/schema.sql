@@ -15,7 +15,8 @@ CREATE TABLE players(
 	instagram BOOLEAN,
 	instagram_name VARCHAR(255),
 	marital_status BOOLEAN,
-	sport VARCHAR(255)
+	sport VARCHAR(255),
+	upvote INTEGER
 );
 
 CREATE TABLE teams(
