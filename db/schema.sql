@@ -14,7 +14,8 @@ CREATE TABLE players(
 	position VARCHAR(255),
 	instagram BOOLEAN,
 	instagram_name VARCHAR(255),
-	marital_status BOOLEAN
+	marital_status BOOLEAN,
+	sport VARCHAR(255)
 );
 
 CREATE TABLE teams(
@@ -25,19 +26,22 @@ CREATE TABLE teams(
 	head_coach VARCHAR(255),
 	divison VARCHAR(255),
 	mascot VARCHAR(255),
-	homepage VARCHAR(255)
+	homepage VARCHAR(255),
+	sport VARCHAR(255)
 );
 
-CREATE TABLE faqs (
+CREATE TABLE faqs(
 	id SERIAL PRIMARY KEY,
 	question TEXT,
-	answer TEXT
+	answer TEXT,
+	sport VARCHAR(255)
 );
 
 CREATE TABLE terms(
 	id SERIAL PRIMARY KEY,
 	term VARCHAR(255),
-	definition TEXT
+	definition TEXT,
+	sport VARCHAR(255)
 );
 
 
