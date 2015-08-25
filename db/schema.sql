@@ -8,13 +8,14 @@ CREATE TABLE players(
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(255),
 	age INTEGER,
-	salary INTEGER,
+	salary VARCHAR(255),
 	college VARCHAR(255),
 	team VARCHAR(255),
 	position VARCHAR(255),
-	instagram BOOLEAN,
 	instagram_name VARCHAR(255),
 	marital_status BOOLEAN,
+	jersey_number INTEGER,
+	img_url VARCHAR(255),
 	sport VARCHAR(255),
 	upvote INTEGER
 );
