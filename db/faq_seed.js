@@ -163,7 +163,7 @@ db.create('faqs', fq15, function(term) {
 /*BASKETBALL FAQs and ANSWERS:
 -----------------------------------------*/
 var basketballQuestion = [
-  "How long is a basketball game?","How many players are on a team?", "How many players are on the court at a time?", "How many fouls can you get before you foul out?", "How many teams are in the NBA?", "What are the two conferences in the NBA?", "What are the divisions in the NBA?", "Who is the commisioner?", "What happens if the game is tied at the end of regular time?", "How many teams make it to the playoffs?", "How long is the championship series?", "How long is the NBA season?", "Can you come to the NBA right after high school?", "Who was the last person to do it?", "How tall is the average basketball player?"
+  "How long is a basketball game?", "How many players are on a team?", "How many players are on the court at a time?", "How many fouls can you get before you foul out?", "How many teams are in the NBA?", "What are the two conferences in the NBA?", "What are the divisions in the NBA?", "Who is the commisioner?", "What happens if the game is tied at the end of regular time?", "How many teams make it to the playoffs?", "How long is the championship series?", "How long is the NBA season?", "Can you come to the NBA right after high school?", "Who was the last person to do it?", "How tall is the average basketball player?"
 ];
 
 var basketballAnswer = [
@@ -494,13 +494,11 @@ db.create('faqs', bsq15, function(term) {
 
 /*SOCCER FAQs and ANSWERS:
 -----------------------------------------*/
-var socceerQuestion = ["How many players are on a soccer field at a time?", "How long is a game?", "What is stoppage time?", "How many players are on a roster?", "How long is the season?", "How many teams make the playoffs?", "What are the two conferences in the MLS?", "Who is the commisioner of the MLS?", "How long is a soccer field?"
-  "What is a hat-trick?", "What happens if the game is tied?", "Are players required to take their shirt off after they score a goal?", "What season is soccer played in usually?", "When does a corner kick happen?", "What does it mean to be offsides in soccer?"
-];
+var soccerQuestion = ["How many players are on a soccer field at a time?", "How long is a game?", "What is stoppage time?", "How many players are on a roster?", "How long is the season?", "How many teams make the playoffs?", "What are the two conferences in the MLS?", "Who is the commisioner of the MLS?", "How long is a soccer field?", "What is a hat-trick?", "What happens if the game is tied?", "Are players required to take their shirt off after they score a goal?", "What season is soccer played in usually?", "When does a corner kick happen?", "What does it mean to be offsides in soccer?"];
 
 var soccerAnswer = ["There are 22 players on the field at a time. 10 field players and 1 goalie from each team.", "90 minutes not including stoppage time", "during the game the clock never stops running so at the end of the 90 minutes, time is added for any delays that occur during the game.", "30, but only 18 players are selected for each game", "The MLS season is 34 games long", "12 teams make the playoffs", "The eastern and western conference", "Don Garber", "A soccer field is 120 yards long by 80 yards wide", "A hat trick is when one player scores 3 goals in 1 game.", "If the game is still tied after regular, stoppage time, and overtime, there is a shootout among 5 players from oposing teams. Whichever team with the most goals at the end of the shootout wins.", "No, that just happens alot.", "Usually soccer is played in the fall, but the MLS season starts in March and goes until December.", "A corner kick is awarded to the attacking team if a shot on goal goes out of bounds.", "When the player accepting the pass is ahead of the last defender before the ball is kicked to him"];
 
-var soccerSport = "soccer"
+var soccerSport = "soccer";
 
 //soccer variables and database
 var sq1 = {
@@ -509,7 +507,7 @@ var sq1 = {
   sport: soccerSport
 };
 
-db.create('faqs', sq1, function(term) {
+db.create('faqs', sq1, function(faq) {
   console.log("sq 1 has worked");
 });
 
@@ -657,13 +655,9 @@ db.create('faqs', sq15, function(term) {
 
 /*HOCKEY FAQs and ANSWERS:
 -----------------------------------------*/
-var hockeyQuestion = ["What do you win at the end of the NHL championships?", "What is the puck made of?", "Can the puck be kicked in for a goal?", "How many games are in a regular season?", "What are the two conferences in the NHL?", "How many teams are in the NHL?", "What are the 4 divisions in hockey?", "Which team has won the most Championships?", "How many teams make the playoffs?", "How long is a hockey game?", "Who is the commissioner of the NHL?", "How long does a hockey fight last?", "How many players are on a team?", "How many players are on the ice at a time"
-  "Is there a mercy rule in hockey?"
-];
+var hockeyQuestion = ["What do you win at the end of the NHL championships?", "What is the puck made of?", "Can the puck be kicked in for a goal?", "How many games are in a regular season?", "What are the two conferences in the NHL?", "How many teams are in the NHL?", "What are the 4 divisions in hockey?", "Which team has won the most Championships?", "How many teams make the playoffs?", "How long is a hockey game?", "Who is the commissioner of the NHL?", "How long does a hockey fight last?", "How many players are on a team?", "How many players are on the ice at a time", "Is there a mercy rule in hockey?"];
 
-var hockeyAnswer = ["The Stanley Cup", "vulcanized rubber", "The puck can ricochet off of a players skate, but a player can not intentionaly kick the puck in.", "82", "Eastern and Western", "The Atlantic Conference has the Metropolitan, and the Atlantic divison, while the Western Conference has the Central, and Pacific divisions.", "Toronto Maple Leafs. 13."
-  "16", "A hockey game is broken into 3 periods that are 20 minutes long.", "Gary Bettman", "A fight in hockey ends when one of the players hits the ice", "20", "6. 5 skaters and 1 goalie", "Nope"
-];
+var hockeyAnswer = ["The Stanley Cup", "vulcanized rubber", "The puck can ricochet off of a players skate, but a player can not intentionaly kick the puck in.", "82", "Eastern and Western", "The Atlantic Conference has the Metropolitan, and the Atlantic divison, while the Western Conference has the Central, and Pacific divisions.", "Toronto Maple Leafs. 13.", "16", "A hockey game is broken into 3 periods that are 20 minutes long.", "Gary Bettman", "A fight in hockey ends when one of the players hits the ice", "20", "6. 5 skaters and 1 goalie", "Nope"];
 
 var hockeySport = "hockey"
 

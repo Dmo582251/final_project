@@ -1,0 +1,22 @@
+ {{> navs/basketballnav }}
+
+ <h1>Basketball Hot Guyz</h1>
+
+ {{#each players}}
+ 	<div class="eachHotty">
+	{{name}}
+	{{upvote}}<br>
+ 	<img src="{{img_url}}" alt="" height="325" width="400"><br>
+ 	{{team}}
+ 	{{jersey_number}}
+	{{position}}
+ 	{{age}}
+ 	{{college}}
+ 	{{salary}}
+ 	{{instagram_name}}
+ 	{{marital_status}}<br>
+ 	<br>
+	</div>
+ 	<br>
+ 	<br>
+ {{/each}}
