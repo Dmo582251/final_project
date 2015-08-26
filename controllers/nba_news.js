@@ -1,9 +1,9 @@
-app.get('/nfl-news', function(req, res) {
+app.get('/nba-news', function(req, res) {
 
   //All the web scraping magic will happen here
 
 
-  url = 'http://www.prosportsdaily.com/nfl/nfl-rumors.html';
+  url = 'http://www.prosportsdaily.com/nba/nba-rumors.html';
 
   // The structure of our request call
   // The first parameter is our URL
