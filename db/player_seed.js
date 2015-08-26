@@ -338,9 +338,7 @@ var hplayer = ['Alexander Wennberg', 'David Rundblad', 'Brendan Smith', 'Henrik 
 
 var hAge = [20, 24, 26, 33, 27, 30, 28, 25, 23, 29, 32, 27, 28, 28, 23];
 
-var hSalary = ['925,000', '900,000(2013)'
-  '2.25 million', '11 million', '6.5 million', '7.875 million(2017)', '12 million', '875,000(2012)', '5.5 million', '1.7 million', '2.5 million', '7 million', ' 6.75 million', ' 3.5 million(2013)', '2.25 million'
-];
+var hSalary = ['925,000', '900,000(2013)', '2.25 million', '11 million', '6.5 million', '7.875 million(2017)', '12 million', '875,000(2012)', '5.5 million', '1.7 million', '2.5 million', '7 million', ' 6.75 million', ' 3.5 million(2013)', '2.25 million'];
 
 var hJerseyNum = [41, 5, 2, 30, 19, 17, 87, 65, 91, 40, 20, 16, 31, 4, 44];
 
@@ -1012,10 +1010,10 @@ var bkPlayer1 = {
   college: bkCollege[0],
   team: bkTeam[0],
   position: bkPosition[0],
-  instagram_name: bkInsta[0],
+  instagram_name: bkinstaName[0],
   marital_status: bkMarital[0],
   jersey_number: bkJerseyNum[0],
-  img_url: bkURL[0],
+  img_url: bkImgUrl[0],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1030,10 +1028,10 @@ var bkPlayer2 = {
   college: bkCollege[1],
   team: bkTeam[1],
   position: bkPosition[1],
-  instagram_name: bkInsta[1],
+  instagram_name: bkinstaName[1],
   marital_status: bkMarital[1],
   jersey_number: bkJerseyNum[1],
-  img_url: bkURL[1],
+  img_url: bkImgUrl[1],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1048,10 +1046,10 @@ var bkPlayer3 = {
   college: bkCollege[2],
   team: bkTeam[2],
   position: bkPosition[2],
-  instagram_name: bkInsta[2],
+  instagram_name: bkinstaName[2],
   marital_status: bkMarital[2],
   jersey_number: bkJerseyNum[2],
-  img_url: bkURL[2],
+  img_url: bkImgUrl[2],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1066,10 +1064,10 @@ var bkPlayer4 = {
   college: bkCollege[3],
   team: bkTeam[3],
   position: bkPosition[3],
-  instagram_name: bkInsta[3],
+  instagram_name: bkinstaName[3],
   marital_status: bkMarital[3],
   jersey_number: bkJerseyNum[3],
-  img_url: bkURL[3],
+  img_url: bkImgUrl[3],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1084,10 +1082,10 @@ var bkPlayer5 = {
   college: bkCollege[4],
   team: bkTeam[4],
   position: bkPosition[4],
-  instagram_name: bkInsta[4],
+  instagram_name: bkinstaName[4],
   marital_status: bkMarital[4],
   jersey_number: bkJerseyNum[4],
-  img_url: bkURL[4],
+  img_url: bkImgUrl[4],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1102,10 +1100,10 @@ var bkPlayer6 = {
   college: bkCollege[5],
   team: bkTeam[5],
   position: bkPosition[5],
-  instagram_name: bkInsta[5],
+  instagram_name: bkinstaName[5],
   marital_status: bkMarital[5],
   jersey_number: bkJerseyNum[5],
-  img_url: bkURL[5],
+  img_url: bkImgUrl[5],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1120,10 +1118,10 @@ var bkPlayer7 = {
   college: bkCollege[6],
   team: bkTeam[6],
   position: bkPosition[6],
-  instagram_name: bkInsta[6],
+  instagram_name: bkinstaName[6],
   marital_status: bkMarital[6],
   jersey_number: bkJerseyNum[6],
-  img_url: bkURL[6],
+  img_url: bkImgUrl[6],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1138,10 +1136,10 @@ var bkPlayer8 = {
   college: bkCollege[7],
   team: bkTeam[7],
   position: bkPosition[7],
-  instagram_name: bkInsta[7],
+  instagram_name: bkinstaName[7],
   marital_status: bkMarital[7],
   jersey_number: bkJerseyNum[7],
-  img_url: bkURL[7],
+  img_url: bkImgUrl[7],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1156,10 +1154,10 @@ var bkPlayer9 = {
   college: bkCollege[8],
   team: bkTeam[8],
   position: bkPosition[8],
-  instagram_name: bkInsta[8],
+  instagram_name: bkinstaName[8],
   marital_status: bkMarital[8],
   jersey_number: bkJerseyNum[8],
-  img_url: bkURL[8],
+  img_url: bkImgUrl[8],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1174,10 +1172,10 @@ var bkPlayer10 = {
   college: bkCollege[9],
   team: bkTeam[9],
   position: bkPosition[9],
-  instagram_name: bkInsta[9],
+  instagram_name: bkinstaName[9],
   marital_status: bkMarital[9],
   jersey_number: bkJerseyNum[9],
-  img_url: bkURL[9],
+  img_url: bkImgUrl[9],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1192,10 +1190,10 @@ var bkPlayer11 = {
   college: bkCollege[10],
   team: bkTeam[10],
   position: bkPosition[10],
-  instagram_name: bkInsta[10],
+  instagram_name: bkinstaName[10],
   marital_status: bkMarital[10],
   jersey_number: bkJerseyNum[10],
-  img_url: bkURL[10],
+  img_url: bkImgUrl[10],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1210,10 +1208,10 @@ var bkPlayer12 = {
   college: bkCollege[11],
   team: bkTeam[11],
   position: bkPosition[11],
-  instagram_name: bkInsta[11],
+  instagram_name: bkinstaName[11],
   marital_status: bkMarital[11],
   jersey_number: bkJerseyNum[11],
-  img_url: bkURL[11],
+  img_url: bkImgUrl[11],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1228,10 +1226,10 @@ var bkPlayer13 = {
   college: bkCollege[12],
   team: bkTeam[12],
   position: bkPosition[12],
-  instagram_name: bkInsta[12],
+  instagram_name: bkinstaName[12],
   marital_status: bkMarital[12],
   jersey_number: bkJerseyNum[12],
-  img_url: bkURL[12],
+  img_url: bkImgUrl[12],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1246,10 +1244,10 @@ var bkPlayer14 = {
   college: bkCollege[13],
   team: bkTeam[13],
   position: bkPosition[13],
-  instagram_name: bkInsta[13],
+  instagram_name: bkinstaName[13],
   marital_status: bkMarital[13],
   jersey_number: bkJerseyNum[13],
-  img_url: bkURL[13],
+  img_url: bkImgUrl[13],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1264,10 +1262,10 @@ var bkPlayer15 = {
   college: bkCollege[14],
   team: bkTeam[14],
   position: bkPosition[14],
-  instagram_name: bkInsta[14],
+  instagram_name: bkinstaName[14],
   marital_status: bkMarital[14],
   jersey_number: bkJerseyNum[14],
-  img_url: bkURL[14],
+  img_url: bkImgUrl[14],
   sport: bkSport,
   upvote: bkVote
 };
@@ -1291,9 +1289,7 @@ var sTeam = ['Orlando City', 'Orlando City', 'Kansas City', 'FC Dallas', 'Seoul 
 
 var sPosition = ['Midfielder', 'Defender', 'Midfielder', 'Defender', 'Forward', 'Forward', 'Midfielder', 'Midfielder', 'Forward', 'Center Defender', 'Midfielder', 'Midfielder', 'Forward', 'Forward', 'Defender'];
 
-var sInsta = ['@kaka', '@heathpearce', 'NA', 'NA', 'NA', 'NA', '@chrispontius13', '@gzusi', '@ChrisWondo', '@mattbesler', 'NA', '@leenguyen24'
-  'NA', '@ddwyer14', 'NA'
-];
+var sInsta = ['@kaka', '@heathpearce', 'NA', 'NA', 'NA', 'NA', '@chrispontius13', '@gzusi', '@ChrisWondo', '@mattbesler', 'NA', '@leenguyen24', 'NA', '@ddwyer14', 'NA'];
 
 var sMarital = [true, true, true, true, true, false, false, false, true, true, false, false, false, true, true];
 
@@ -1323,7 +1319,6 @@ var sPlayer1 = {
   name: splayer[0],
   age: sAge[0],
   salary: sSalary[0],
-  college: sCollege[0],
   team: sTeam[0],
   position: sPosition[0],
   instagram_name: sInsta[0],
@@ -1341,7 +1336,6 @@ var sPlayer2 = {
   name: splayer[1],
   age: sAge[1],
   salary: sSalary[1],
-  college: sCollege[1],
   team: sTeam[1],
   position: sPosition[1],
   instagram_name: sInsta[1],
@@ -1359,7 +1353,6 @@ var sPlayer3 = {
   name: splayer[2],
   age: sAge[2],
   salary: sSalary[2],
-  college: sCollege[2],
   team: sTeam[2],
   position: sPosition[2],
   instagram_name: sInsta[2],
@@ -1377,7 +1370,6 @@ var sPlayer4 = {
   name: splayer[3],
   age: sAge[3],
   salary: sSalary[3],
-  college: sCollege[3],
   team: sTeam[3],
   position: sPosition[3],
   instagram_name: sInsta[3],
@@ -1395,7 +1387,6 @@ var sPlayer5 = {
   name: splayer[4],
   age: sAge[4],
   salary: sSalary[4],
-  college: sCollege[4],
   team: sTeam[4],
   position: sPosition[4],
   instagram_name: sInsta[4],
@@ -1413,7 +1404,6 @@ var sPlayer6 = {
   name: splayer[5],
   age: sAge[5],
   salary: sSalary[5],
-  college: sCollege[5],
   team: sTeam[5],
   position: sPosition[5],
   instagram_name: sInsta[5],
@@ -1431,7 +1421,6 @@ var sPlayer7 = {
   name: splayer[6],
   age: sAge[6],
   salary: sSalary[6],
-  college: sCollege[6],
   team: sTeam[6],
   position: sPosition[6],
   instagram_name: sInsta[6],
@@ -1449,7 +1438,6 @@ var sPlayer8 = {
   name: splayer[7],
   age: sAge[7],
   salary: sSalary[7],
-  college: sCollege[7],
   team: sTeam[7],
   position: sPosition[7],
   instagram_name: sInsta[7],
@@ -1467,7 +1455,6 @@ var sPlayer9 = {
   name: splayer[8],
   age: sAge[8],
   salary: sSalary[8],
-  college: sCollege[8],
   team: sTeam[8],
   position: sPosition[8],
   instagram_name: sInsta[8],
@@ -1485,7 +1472,6 @@ var sPlayer10 = {
   name: splayer[9],
   age: sAge[9],
   salary: sSalary[9],
-  college: sCollege[9],
   team: sTeam[9],
   position: sPosition[9],
   instagram_name: sInsta[9],
@@ -1503,7 +1489,6 @@ var sPlayer11 = {
   name: splayer[10],
   age: sAge[10],
   salary: sSalary[10],
-  college: sCollege[10],
   team: sTeam[10],
   position: sPosition[10],
   instagram_name: sInsta[10],
@@ -1521,7 +1506,6 @@ var sPlayer12 = {
   name: splayer[11],
   age: sAge[11],
   salary: sSalary[11],
-  college: sCollege[11],
   team: sTeam[11],
   position: sPosition[11],
   instagram_name: sInsta[11],
@@ -1539,7 +1523,6 @@ var sPlayer13 = {
   name: splayer[12],
   age: sAge[12],
   salary: sSalary[12],
-  college: sCollege[12],
   team: sTeam[12],
   position: sPosition[12],
   instagram_name: sInsta[12],
@@ -1557,7 +1540,6 @@ var sPlayer14 = {
   name: splayer[13],
   age: sAge[13],
   salary: sSalary[13],
-  college: sCollege[13],
   team: sTeam[13],
   position: sPosition[13],
   instagram_name: sInsta[13],
@@ -1575,7 +1557,6 @@ var sPlayer15 = {
   name: splayer[14],
   age: sAge[14],
   salary: sSalary[14],
-  college: sCollege[14],
   team: sTeam[14],
   position: sPosition[14],
   instagram_name: sInsta[14],

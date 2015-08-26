@@ -1,0 +1,98 @@
+
+#firstViewHtml{
+	width: 100vw;
+	height: 47vw;
+	background-color: black;
+}
+
+@font-face {
+    font-family: 'sports_world';
+    src: url('../Sports_World-Regular-webfont.otf');
+    src: url('../Sports Sports_World-Regular-webfont.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*FIRST VIEW STYLES
+-------------------------------------------*/
+.background-image{
+	top: 0;
+background: linear-gradient(
+      rgba(26, 35, 126, 0.5), 
+      rgba(26, 35, 126, 0.5)
+    ), url('http://insider.ticketmaster.com/wp-content/uploads/2014/08/football-stadium.png') no-repeat center center fixed; 
+  -webkit-background-size: 100% 100%;
+  /*-moz-background-size: 50%;
+  -o-background-size: 50%;
+  background-size: 50%;*/
+  position: absolute;
+  height: 86%;
+  width: 100%;
+  z-index: 0;
+}
+
+.firstViewTitle{
+	text-align: center;
+	font-size: 102px;
+	margin-top: 5%;
+	padding: 15px;
+	color: white;
+	position: relative;
+	z-index: 1000;
+	font-family: 'Righteous', cursive;
+}
+
+.firstViewAbout{
+	font-family: 'Righteous', cursive;
+	color:white;
+	text-align: center;
+	font-size: 30px;
+	padding: 15px;
+	width: 60%;
+	position: relative;
+	z-index: 10;
+	margin-left: 20%;
+	margin-bottom: -1%;
+}
+
+.single {
+	float: left;
+	margin: 1%;
+	font-size: 30px;
+	margin-left: 3.8%;
+	margin-top: 7%;
+	position: relative;
+	z-index: 1;
+	border: 1px solid white;
+}
+
+.single p{
+	text-decoration: none;
+	color: white;
+}
+
+.single p:hover{
+	color:orange;
+}
+
+.box {
+  background: black;
+  text-align: center;
+  color: white;
+}
+
+/*Nav Barz
+=================================*/
+.navigation{
+	width: 100%;
+	font-size: 30px;
+}
+
+.navigation a{
+	text-decoration: none;
+}
+
+.navigation a:hover{
+	color:orange;
+}
+

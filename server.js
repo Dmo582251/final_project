@@ -16,6 +16,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main', extname: 'handlebars'}))
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
 
+
 // Allows us to use req.body
 app.use(bodyParser.urlencoded());
 // Loads static files
@@ -42,14 +43,18 @@ app.use(methodOverride(function (req, res) {
 app.listen(3000);
 
 
+
+
 /* STARTING ROUTES
 ----------------------------------------------*/
 
 //First View Route
 app.get('/', function (req, res){
 	console.log("First View has Worked!");
-	res.render('firstView');
+	res.render('first_view');
 });
+
+
 
 
 
