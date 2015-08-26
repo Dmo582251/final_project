@@ -34,7 +34,7 @@ background: linear-gradient(
 .firstViewTitle{
 	text-align: center;
 	font-size: 102px;
-	margin-top: 5%;
+	margin-top: 1.5%;
 	padding: 15px;
 	color: white;
 	position: relative;
@@ -43,12 +43,13 @@ background: linear-gradient(
 }
 
 .firstViewAbout{
-	font-family: 'Righteous', cursive;
-	color:white;
+	color: black;
+	font-family: 'Fredoka One', cursive;
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
 	padding: 15px;
 	width: 60%;
+	margin-top: -3%;
 	position: relative;
 	z-index: 10;
 	margin-left: 20%;
@@ -68,11 +69,13 @@ background: linear-gradient(
 
 .single p{
 	text-decoration: none;
-	color: white;
+	color: #FB8C00;
+	font-family: 'Righteous', cursive;
 }
 
 .single p:hover{
-	color:orange;
+	color:white;
+	text-decoration: none;
 }
 
 .box {
@@ -84,15 +87,30 @@ background: linear-gradient(
 /*Nav Barz
 =================================*/
 .navigation{
-	width: 100%;
-	font-size: 30px;
+  width: 100%;
+  font-size: 30px;
+  padding: 40px;
+  margin-left: -1%;
+  margin-top: -1%;
+  background-color: rgb(42,42,97);
+}
+
+.navTitle{
+	font-size: 50px;
+	font-family: 'Righteous', cursive;
 }
 
 .navigation a{
+	padding: 20px;
 	text-decoration: none;
+	color: white;
 }
 
-.navigation a:hover{
+.firstNav{
+	margin-left: 35%;
+}
+
+.nav1:hover{
 	color:orange;
 }
 
