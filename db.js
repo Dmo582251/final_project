@@ -110,9 +110,20 @@ module.exports = {
      client.query(query, function (err, result){
        console.log("THIS IS RESULT", result);
        cb(result.rows)
-     })
+     });
 
-   })
+   });
    this.end();
- }
+ 	},
+ 	 upvote: function  (id, newNum, cb) {
+    pg.connect(dbUrl, function  (err, client, done) {
+      client.query('UPDATE players SET upvote=($1) WHERE id=' + id, [newNum], function  (err, result) {
+        if(err){
+        	return console.error("error running query", err);
+        }
+        cb(result.rows[0]);
+      })
+    })
+    this.end();
+  }
 };
