@@ -1,0 +1,13 @@
+ {{> navs/footballnav }}
+
+<h1> Football News</h1>
+
+{{#each articles}}
+	{{obj.link_text}}<br>
+	{{obj.link_url}}<br>
+	{{obj.article_source}}<br>
+	{{obj.article_text}}<br>
+	{{obj.article_data}}<br>
+{{/each}}
+
+
