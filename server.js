@@ -4,7 +4,7 @@ var app = express();
 var logger = require('morgan');
 var path = require('path');
 var exphbs = require('express-handlebars');
-var bodyParser = require('body-parser');
+// var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 // this is now in controllers: 
 var db = require('./db.js');
@@ -24,11 +24,11 @@ app.set('view engine', 'handlebars');
 
 
 // Allows us to use req.body
-app.use(bodyParser.urlencoded());
+// app.use(bodyParser.urlencoded());
 // Loads static files
 app.use(express.static('public'));
 app.use(logger('dev'));
-
+console.log(fs.readdirSync('./controllers'));
 // stuff for fs
 //this is unclear to michael. How does this work. 
 fs.readdirSync('./controllers').forEach(function(file) {
@@ -47,7 +47,7 @@ app.use(methodOverride(function(req, res) {
   }
 }));
 
-app.listen(3000);
+
 
 
 
@@ -66,7 +66,7 @@ app.get('/', function (req, res){
 
 
 
-
+app.listen(3000);
 
 
 

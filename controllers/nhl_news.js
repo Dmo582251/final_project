@@ -1,3 +1,5 @@
+var request = require('request');
+module.exports.controller = function(app) {
 app.get('/nhl-news', function(req, res) {
 
   //All the web scraping magic will happen here
@@ -60,3 +62,4 @@ app.get('/nhl-news', function(req, res) {
   });
 
 });
+}

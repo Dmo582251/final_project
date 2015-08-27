@@ -1,6 +1,9 @@
 var db = require('../db.js');
+var request = require('request');
+var cheerio = require('cheerio');
 
-module.exports.controller = function(app) {
+module.exports = {
+	controller: function(app) {
 
 	//Football Index View Route
 	app.get('/football', function (req, res){
@@ -40,14 +43,16 @@ module.exports.controller = function(app) {
 			res.render('football_hot_guys', data)
 		});
 	});
-
-app.get('football/news', function (req, res) {
-  url = 'http://www.prosportsdaily.com/nfl/nfl-rumors.html';
+ 
+//Football News
+app.get('/football/news', function (req, res) {
+  var url = 'http://www.prosportsdaily.com/nfl/nfl-rumors.html';
+  // var url = 'http://google.com';
   // The structure of our request call
   // The first parameter is our URL
   // The callback function takes 3 parameters, an error, response status code and the html
   request(url, function(error, response, html) {
-    // First we'll check to make sure no errors occurred when making the request
+   	//First we'll check to make sure no errors occurred when making the request
     if (!error) {
       // Next, we'll utilize the cheerio library on the returned html which will essentially give us jQuery functionality
       var $ = cheerio.load(html);
@@ -56,6 +61,7 @@ app.get('football/news', function (req, res) {
       $('.unstyled').filter(function() {
         var data = $(this);
         var lis = data.eq(0).find('li');
+        console.log('lis length ', lis.length);
         for (var i = 0; i < lis.length; i++) {
           var obj = {}
           var li = lis.eq(i);
@@ -72,14 +78,16 @@ app.get('football/news', function (req, res) {
           obj['article_date'] = article_date;
           articles_array.push(obj);
         }
-         var data = {
-         		article : articles_array
-         }
-      })
+ //         var data = {
+ //         		article : articles_array
+ //         }
+       })
+      console.log(articles_array);
+      res.send(articles_array);
+ // //articles_array
+ }
+ //      res.render('football_news', data);
 
-      //articles_array
-      res.render('football_news', data);
-    }
   });
 });
 
@@ -97,5 +105,5 @@ app.get('football/news', function (req, res) {
 		console.log("Football team view has worked!");
 		res.render('football_team')
 	});	
-
+}
 }
