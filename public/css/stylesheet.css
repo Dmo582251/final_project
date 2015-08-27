@@ -1,3 +1,5 @@
+/*FIRST VIEW STYLES
+-------------------------------------------*/
 
 #firstViewHtml{
 	width: 100vw;
@@ -5,16 +7,6 @@
 	background-color: black;
 }
 
-@font-face {
-    font-family: 'sports_world';
-    src: url('../Sports_World-Regular-webfont.otf');
-    src: url('../Sports Sports_World-Regular-webfont.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*FIRST VIEW STYLES
--------------------------------------------*/
 .background-image{
 	top: 0;
 background: linear-gradient(
@@ -59,7 +51,7 @@ background: linear-gradient(
 .single {
 	float: left;
 	margin: 1%;
-	font-size: 30px;
+	font-size: 40px;
 	margin-left: 3.8%;
 	margin-top: 7%;
 	position: relative;
@@ -93,6 +85,7 @@ background: linear-gradient(
   margin-left: -1%;
   margin-top: -1%;
   background-color: rgb(42,42,97);
+  font-family: 
 }
 
 .navTitle{
@@ -104,13 +97,25 @@ background: linear-gradient(
 	padding: 20px;
 	text-decoration: none;
 	color: white;
+	font-family: 'Fredoka One', cursive;
 }
 
 .firstNav{
-	margin-left: 35%;
+	margin-left: 29%;
 }
 
 .nav1:hover{
-	color:orange;
+	color: #FB8C00;
+}
+
+.inner-navigation{
+	width: 100%;
+	padding: 15px;
+	font-size: 25px;
+	background-color: #FB8C00;
+}
+
+.inner-navigation a{
+	text-decoration: none;
 }
 
