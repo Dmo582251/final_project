@@ -31,15 +31,26 @@ module.exports.controller = function(app) {
 	});	
 
 	//Basketball Hot Guyz Route
-	app.get('/basketball/hot_guys', function (req, res){
-		db.findByColumn("players", "sport", "basketball", function (result){
-			var data = {
-				players : result
-			}
-			console.log("basketball players view has worked!");
-			res.render('basketball_hot_guys', data)
-		});
-	});
+	// app.get('/basketball/hot_guys', function (req, res){
+	// 	db.findByColumn("players", "sport", "basketball", function (result){
+	// 		var data = {
+	// 			players : result
+	// 		}
+	// 		console.log("basketball players view has worked!");
+	// 		res.render('basketball_hot_guys', data)
+	// 	});
+	// });
+
+	//Basketball Hot Guyz Route
+    app.get('/basketball/hot_guys', function(req, res) {
+      db.orderPlayersByUpVote("basketball", function(result) {
+        var data = {
+          players: result
+        }
+        console.log("basketball players view has worked!");
+        res.render('basketball_hot_guys', data)
+      });
+    });
 
 	//upvote basketball
     app.post('/upvote', function(req, res) {
