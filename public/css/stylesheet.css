@@ -127,3 +127,8 @@ background: linear-gradient(
 	text-decoration: underline;
 }
 
+/*Terms*/
+dd{
+	display:none;
+}
+

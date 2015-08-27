@@ -125,5 +125,17 @@ module.exports = {
       })
     })
     this.end();
-  }
+  },
+  orderPlayersByUpVote: function(sport, cb) {
+		pg.connect(dbUrl, function (err, client, done){
+			var query = 'SELECT * FROM players WHERE sport = \'' + sport + '\' order by upvote DESC';
+			client.query(query, function (err, result){
+				done();
+				console.log('this is the query', query);
+				// console.log('SELECT * FROM ' + table + ' WHERE ' + col + '=\'' + value + '\'')
+				cb(result.rows);
+			});
+		});
+		this.end();
+	}
 };

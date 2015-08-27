@@ -5,7 +5,6 @@
  {{#each players}}
  	<div class="eachHotty">
 	{{name}}
-	{{upvote}}<br>
  	<img src="{{img_url}}" alt="" height="325" width="400"><br>
  	{{team}}
  	{{jersey_number}}
@@ -15,6 +14,15 @@
  	{{salary}}
  	{{instagram_name}}
  	{{marital_status}}<br>
+	{{upvote}}<br>
+ 	<div class="upvote">
+			<form action="/upvote" method="POST">
+				<input type="hidden" name='player_id' value="{{id}}">
+				<input type="hidden" name="current_upvote" value="{{upvote}}">
+				
+				<p>Upvote this Hottie</p><input class="buttonupvote" type="submit" src="/img/arrowup.png" style="height:50px; width:50px;">
+			</form>
+		</div>
  	<br>
 	</div>
  	<br>

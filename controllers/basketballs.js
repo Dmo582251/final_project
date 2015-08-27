@@ -41,6 +41,17 @@ module.exports.controller = function(app) {
 		});
 	});
 
+	//upvote basketball
+    app.post('/upvote', function(req, res) {
+
+      var newNum = parseInt(req.body.current_upvote) + 1;
+
+      db.upvote(req.body.player_id, newNum, function(player) {
+        console.log(player)
+        res.redirect('/basketball/hot_guys')
+      });
+    });
+
 	//Basketball Index View Route
 	app.get('/basketball/team', function (req, res){
 		console.log("basketball team view has worked!");

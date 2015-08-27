@@ -1,4 +1,5 @@
 var request = require('request');
+var cheerio = require('cheerio');
 module.exports.controller = function(app) {
 app.get('/nhl-news', function(req, res) {
 
@@ -45,8 +46,8 @@ app.get('/nhl-news', function(req, res) {
 
           var article_date = pChildren.eq(3).text();
 
-          obj['article_title'] = link_text;
-          obj['article_url'] = link_url;
+          obj['link_text'] = link_text;
+          obj['link_url'] = "http://www.prosportsdaily.com/articles/" + link_url;
           obj['article_source'] = article_source;
           obj['article_text'] = article_text;
           obj['article_date'] = article_date;
@@ -56,8 +57,11 @@ app.get('/nhl-news', function(req, res) {
         }
 
       })
+      data = {
+        articles : articles_array
+      }
 
-      res.send(articles_array);
+        res.render("hockey_news", data);
     }
   });
 
