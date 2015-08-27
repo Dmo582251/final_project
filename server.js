@@ -76,6 +76,4 @@ exports = module.exports = app;
 
 
 
-/* STARTING ROUTES
-----------------------------------------------*/
 

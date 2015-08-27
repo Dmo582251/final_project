@@ -1,5 +1,8 @@
+var request = require('request');
+var cheerio = require('cheerio');
+
 module.exports.controller = function(app) {
-app.get('/mlb-news', function(req, res) {
+app.get('/baseball/news', function(req, res) {
 
   //All the web scraping magic will happen here
 
@@ -56,6 +59,12 @@ app.get('/mlb-news', function(req, res) {
 
       })
 
+      var data = {
+        articles: articles_array
+      }
+
+      // do res.render and pass in the data object to the view and loop over
+      
       res.send(articles_array);
     }
   });
