@@ -79,19 +79,14 @@ background: linear-gradient(
 /*Nav Barz
 =================================*/
 .navigation{
-  width: 100%;
-  font-size: 30px;
+  width: 99%;
+  font-size: 37px;
   padding: 40px;
   margin-left: -1%;
   margin-top: -1%;
-  background-color: rgb(42,42,97);
-  font-family: 
+  background-color: rgb(42,42,97); 
 }
 
-.navTitle{
-	font-size: 50px;
-	font-family: 'Righteous', cursive;
-}
 
 .navigation a{
 	padding: 20px;
@@ -100,22 +95,35 @@ background: linear-gradient(
 	font-family: 'Fredoka One', cursive;
 }
 
+.navTitle{
+	font-size: 60px;
+}
+
 .firstNav{
-	margin-left: 29%;
+	margin-left: 17%;
 }
 
 .nav1:hover{
 	color: #FB8C00;
+	text-decoration: underline;
 }
 
 .inner-navigation{
-	width: 100%;
-	padding: 15px;
-	font-size: 25px;
+	width: 100.5%;
+	padding: 23px;
+	font-size: 30px;
 	background-color: #FB8C00;
+	margin-left:-0.5%;
 }
 
-.inner-navigation a{
+.inner-nav-a{
+	color:white;
 	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 197px;
+}
+
+.inner-nav-a:hover{
+	text-decoration: underline;
 }
 
