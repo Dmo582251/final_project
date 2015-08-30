@@ -45,12 +45,12 @@ module.exports = {
 
 
     //upvote football
-    app.post('/upvote', function(req, res) {
+    app.post('/football/upvote', function(req, res) {
 
       var newNum = parseInt(req.body.current_upvote) + 1;
 
       db.upvote(req.body.player_id, newNum, function(player) {
-        console.log(player)
+        console.log('sending user to football hot guys page')
         res.redirect('/football/hot_guys')
       });
     });

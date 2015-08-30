@@ -1,11 +1,13 @@
  {{> navs/soccernav }}
 
-<h1> Soccer News</h1>
+<h1 class="single-title"> Soccer News</h1>
 
 {{#each articles}}
+<div class="single-news">
 	<h3>{{link_text}}</h3>
 	{{article_source}}<br>
 	{{article_text}}
 	<a href={{link_url}} target="_blank">Read more</a>
 	{{article_data}}<br>
+</div>
 {{/each}}

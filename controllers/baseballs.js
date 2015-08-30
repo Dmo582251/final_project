@@ -30,16 +30,27 @@ module.exports.controller = function(app) {
 		});
 	});	
 
-	//baseball Hot Guyz Route
-	app.get('/baseball/hot_guys', function (req, res){
-		db.findByColumn("players", "sport", "baseball", function (result){
-			var data = {
-				players : result
-			}
-			console.log("baseball players view has worked!");
-			res.render('baseball_hot_guys', data)
-		});
-	});
+	//Baseball Hot Guyz Route
+    app.get('/baseball/hot_guys', function(req, res) {
+      db.orderPlayersByUpVote("baseball", function(result) {
+        var data = {
+          players: result
+        }
+        console.log("baseball players view has worked!");
+        res.render('baseball_hot_guys', data)
+      });
+    });
+
+	//upvote baseball
+    app.post('/baseball/upvote', function(req, res) {
+
+      var newNum = parseInt(req.body.current_upvote) + 1;
+
+      db.upvote(req.body.player_id, newNum, function(player) {
+        console.log(player)
+        res.redirect('/baseball/hot_guys')
+      });
+    });
 
 
 	//baseball Index View Route

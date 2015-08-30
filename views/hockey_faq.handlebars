@@ -1,10 +1,12 @@
 {{> navs/hockeynav }}
 
-<h1>Hockey FAQ</h1>
+<h1 class="single-title">Hockey FAQ</h1>
 
 {{#each faqs}}
+<div class="single-box">
 <dl>
 	<dt>{{question}}</dt>
 	<dd>{{answer}}</dd>
 </dl>
+</div>
 {{/each}}

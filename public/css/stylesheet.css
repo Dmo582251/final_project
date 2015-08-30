@@ -127,8 +127,76 @@ background: linear-gradient(
 	text-decoration: underline;
 }
 
-/*Terms*/
+/*Terms & FAQs
+-------------------------*/
 dd{
 	display:none;
 }
 
+.single-title{
+	font-size:50px;
+	margin-left: 2%;
+	font-family: 'Righteous', cursive;
+}
+
+.single-box{
+	text-align: center;
+	font-size: 45px;
+	width: 50%;
+	margin-top: 50px;
+	padding: 50px;
+	margin-left: 25%;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #FFE0B2;
+	border: 1px solid navy;
+}
+
+/*News Pages
+-------------------------*/
+.single-news{
+  text-align: left;
+  font-size: 30px;
+  width: 75%;
+  padding: 50px;
+  margin-left: 8%;
+  margin-top: 4%;
+  font-family: 'Quicksand', sans-serif;
+  border-top: 1px solid navy;
+}
+
+/*Hot Guys Pages
+-------------------------*/
+.eachHotty{
+	text-align: left;
+	font-size: 20px;
+	margin-left: 10%;
+	width: 75%;
+	margin-top: 50px;
+	padding: 50px;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #FFE0B2;
+	border: 1px solid navy;
+	float:left;
+}
+
+.bio {
+  margin-left: 38%;
+  position: relative;
+  margin-top: -33%;
+  font-size: 30px;
+}
+
+.top-bio{
+	float: left;
+}
+
+.buttonupvote{
+	font-family: 'Quicksand', sans-serif;
+	background-color:rgb(42,42,97); 
+	color:white;
+	font-size: 25px;
+	height: 50px;
+  width: 120px;
+	padding:11px;
+	cursor:pointer;
+}

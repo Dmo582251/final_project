@@ -1,12 +1,14 @@
 {{> navs/footballnav }}
 
-<h1>Football FAQ</h1>
+<h1 class="single-title">Football FAQ</h1>
 
 {{#each faqs}}
+<div class="single-box">
 <dl>
 <dl>
 	<dt>{{question}}</dt>
 	<dd>{{answer}}</dd>
 </dl>
 </dl>
+</div>
 {{/each}}

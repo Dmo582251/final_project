@@ -1,11 +1,13 @@
  {{> navs/baseballnav }}
 
-<h1> Baseball News</h1>
+<h1 class="single-title"> Baseball News</h1>
 
 {{#each articles}}
-	<h3>{{link_text}}</h3>
-	{{article_source}}<br>
-	{{article_text}}
-	<a href={{link_url}} target="_blank">Read more</a>
-	{{article_data}}<br>
+	<div class="single-news">
+		<h3><b>{{link_text}}</b></h3>
+		{{article_source}}<br>
+		{{article_text}}
+		<a href={{link_url}} target="_blank">Read more</a>
+		{{article_data}}<br>
+	</div>
 {{/each}}

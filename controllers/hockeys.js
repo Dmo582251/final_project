@@ -30,18 +30,8 @@ module.exports.controller = function(app) {
 		});
 	});	
 
-	// //hockey Hot Guyz Route
-	// app.get('/hockey/hot_guys', function (req, res){
-	// 	db.findByColumn("players", "sport", "hockey", function (result){
-	// 		var data = {
-	// 			players : result
-	// 		}
-	// 		console.log("hockey players view has worked!");
-	// 		res.render('hockey_hot_guys', data)
-	// 	});
-	// });
 
-	 //Football Hot Guyz Route
+	 //Hockey Hot Guyz Route
     app.get('/hockey/hot_guys', function(req, res) {
       db.orderPlayersByUpVote("hockey", function(result) {
         var data = {
@@ -53,7 +43,7 @@ module.exports.controller = function(app) {
     });
 
 	//upvote hockey
-    app.post('/upvote', function(req, res) {
+    app.post('/hockey/upvote', function(req, res) {
 
       var newNum = parseInt(req.body.current_upvote) + 1;
 

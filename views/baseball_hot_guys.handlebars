@@ -1,18 +1,32 @@
  {{> navs/baseballnav }}
 
- <h1>Baseball Hot Guyz</h1>
+ <h1 class="single-title">Baseball Hot Guyz</h1>
 
- {{#each players}}
- 	{{name}}
-	{{upvote}}<br>
- 	<img src="{{img_url}}" alt="" height="325" width="400"><br>
- 	{{team}}
- 	{{jersey_number}}
-	{{position}}
- 	{{age}}
- 	{{college}}
- 	{{salary}}
- 	{{instagram_name}}
- 	{{marital_status}}<br>
+{{#each players}}
+ 	<div class="eachHotty">
+	 	<h1>{{name}}</h1><br>
+	 	<img src="{{img_url}}" alt="" height="325" width="400"><br>
+	 	<div class="bio">
+		 	<p>Team: {{team}}</p>
+		 	<p>Jersey Number: {{jersey_number}}</p>
+			<p>Position: {{position}}</p>
+		 	<p>Age: {{age}}</p>
+		 	<p>College: NA</p>
+		 	<p>Salary: {{salary}}</p>
+		 	<p>Instagram: {{instagram_name}}</p>
+		 	<p>Married: {{marital_status}}</p>
+			<p>Number of Upvotes: {{upvote}}
+			 	<div class="upvote">
+					<form action="/baseball/upvote" method="POST">
+						<input type="hidden" name='player_id' value="{{id}}">
+						<input type="hidden" name="current_upvote" value="{{upvote}}">
+						
+						<p>Upvote this Hottie</p><input class="buttonupvote" type="submit" src="/img/arrowup.png">
+					</form>
+				</div>
+	 	<br>
+		</div>
+	</div>
+ 	<br>
  	<br>
  {{/each}}

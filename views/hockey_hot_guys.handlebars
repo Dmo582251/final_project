@@ -1,29 +1,31 @@
  {{> navs/hockeynav }}
 
- <h1>Hockey Hot Guyz</h1>
+ <h1 class="title-single">Hockey Hot Guyz</h1>
 
  {{#each players}}
  	<div class="eachHotty">
-	{{name}}
- 	<img src="{{img_url}}" alt="" height="325" width="400"><br>
- 	{{team}}
- 	{{jersey_number}}
-	{{position}}
- 	{{age}}
- 	{{college}}
- 	{{salary}}
- 	{{instagram_name}}
- 	{{marital_status}}<br>
-	{{upvote}}<br>
- 	<div class="upvote">
-			<form action="/upvote" method="POST">
-				<input type="hidden" name='player_id' value="{{id}}">
-				<input type="hidden" name="current_upvote" value="{{upvote}}">
-				
-				<p>Upvote this Hottie</p><input class="buttonupvote" type="submit" src="/img/arrowup.png" style="height:50px; width:50px;">
-			</form>
+	 	<h1>{{name}}</h1><br>
+	 	<img src="{{img_url}}" alt="" height="325" width="400"><br>
+	 	<div class="bio">
+		 	<p>Team: {{team}}</p>
+		 	<p>Jersey Number: {{jersey_number}}</p>
+			<p>position: {{position}}</p>
+		 	<p>Age: {{age}}</p>
+		 	<p>College: {{college}}</p>
+		 	<p>Salary: {{salary}}</p>
+		 	<p>Instagram: {{instagram_name}}</p>
+		 	<p>Married: {{marital_status}}</p>
+			<p>Number of Upvotes: {{upvote}}</p><br>
+	 		<div class="upvote">
+				<form action="/hockey/upvote" method="POST">
+					<input type="hidden" name='player_id' value="{{id}}">
+					<input type="hidden" name="current_upvote" value="{{upvote}}">
+					
+					<p>Upvote this Hottie:</p><input class="buttonupvote" type="submit" src="/img/arrowup.png" style="height:50px; width:50px;">
+				</form>
+			</div>
+	 	<br>
 		</div>
- 	<br>
 	</div>
  	<br>
  	<br>

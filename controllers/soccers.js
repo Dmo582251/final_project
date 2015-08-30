@@ -31,15 +31,26 @@ module.exports.controller = function(app) {
 	});	
 
 	//soccer Hot Guyz Route
-	app.get('/soccer/hot_guys', function (req, res){
-		db.findByColumn("players", "sport", "soccer", function (result){
-			var data = {
-				players : result
-			}
-			console.log("soccer players view has worked!");
-			res.render('soccer_hot_guys', data)
-		});
-	});
+    app.get('/soccer/hot_guys', function(req, res) {
+      db.orderPlayersByUpVote("soccer", function(result) {
+        var data = {
+          players: result
+        }
+        console.log("soccer players view has worked!");
+        res.render('soccer_hot_guys', data)
+      });
+    });
+
+	//upvote soccer
+    app.post('/soccer/upvote', function(req, res) {
+
+      var newNum = parseInt(req.body.current_upvote) + 1;
+
+      db.upvote(req.body.player_id, newNum, function(player) {
+        console.log(player)
+        res.redirect('/soccer/hot_guys')
+      });
+    });
 
 
 	//soccer Index View Route
